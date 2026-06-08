@@ -18,6 +18,9 @@ while count < max_attempts:
 
     if guess == answer:
         print("正解！")
+        print(f"{count}回で成功")
+        break
+
     else:
         print("不正解")
 
