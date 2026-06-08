@@ -12,7 +12,18 @@ else:
     print("不正解")
 
     if guess < answer:
-        print("もっと大きい数字です")
+        print("それより大きい数字です")
 
     else:
-        print("もっと小さい数字です")
+        print("それより小さい数字です")
+
+    difference = abs(answer - guess)
+
+    if difference <= 10:
+        print("かなり近いです")
+
+    elif difference <= 50:
+        print("近いです")
+
+    else:
+        print("まだ遠いです")
