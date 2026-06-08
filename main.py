@@ -4,7 +4,7 @@ answer = random.randint(100, 999)
 
 print("=== 3桁の数字当てゲーム ===")
 
-max_attempts = 10
+max_attempts = 7
 count = 0
 
 while count < max_attempts:
