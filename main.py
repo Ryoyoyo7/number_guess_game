@@ -25,21 +25,21 @@ while count < max_attempts:
         print("不正解")
 
         if guess < answer:
-            print("それより大きい数字です")
+            print("ヒント：それより大きい数字です")
 
         else:
-            print("それより小さい数字です")
+            print("ヒント：それより小さい数字です")
 
         difference = abs(answer - guess)
 
         if difference <= 10:
-            print("かなり近いです")
+            print("ヒント：かなり近いです")
 
         elif difference <= 50:
-            print("近いです")
+            print("ヒント：近いです")
 
         else:
-            print("まだ遠いです")
+            print("ヒント：まだ遠いです")
 
         print(f"残り{max_attempts - count}回")
 
