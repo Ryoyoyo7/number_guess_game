@@ -9,7 +9,10 @@ count = 0
 
 while count < max_attempts:
 
-    guess = int(input("数字を入力してください："))
+    try:
+        guess = int(input("数字を入力してください："))
+    except ValueError:
+        continue
 
     count += 1
 
