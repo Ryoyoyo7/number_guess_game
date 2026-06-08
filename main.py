@@ -4,9 +4,14 @@ answer = random.randint(100, 999)
 
 print("=== 3桁の数字当てゲーム ===")
 
-while True:
+max_attempts = 10
+count = 0
+
+while count < max_attempts:
 
     guess = int(input("数字を入力してください："))
+
+    count += 1
 
     if guess == answer:
         print("正解！")
@@ -29,3 +34,9 @@ while True:
 
         else:
             print("まだ遠いです")
+
+        print(f"残り{max_attempts - count}回")
+
+else:
+    print("ゲームオーバー")
+    print(f"正解は{answer}でした")
