@@ -8,13 +8,13 @@ max_attempts = 7
 count = 0
 
 while count < max_attempts:
+    count += 10
 
     try:
         guess = int(input("数字を入力してください："))
     except ValueError:
         continue
 
-    count += 1
 
     if guess == answer:
         print("正解！")
